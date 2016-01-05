@@ -19,9 +19,6 @@ function Find-F5AvailableIpAddresses {
     begin {
     }
     process {
-        # $Debug        = $true
-        # $Credentials  = Get-Credential mjenkins-a
-        # $SourceProd   = $true
 
         Write-Verbose "Find Unused IP Addresses";
         Write-Verbose "-------------------------";
