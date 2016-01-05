@@ -1,5 +1,4 @@
-#Find-AvailableIpAddresses -ConnectionInfo $conn -Ip "192.168.1.0/24" -CheckIp "192.168.1.222"
-function Find-AvailableIpAddresses {
+function Find-F5AvailableIpAddresses {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true, HelpMessage = "Please use the New-F5ConnectionInfo method to setup connection info.")]
@@ -72,4 +71,4 @@ function Find-AvailableIpAddresses {
     }
 }
 
-Export-ModuleMember Find-AvailableIpAddresses;
+Export-ModuleMember Find-F5AvailableIpAddresses;

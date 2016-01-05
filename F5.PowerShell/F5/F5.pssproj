@@ -37,7 +37,7 @@
     <Compile Include="Helpers\HelpersFor_Credentials.ps1" />
     <Compile Include="Helpers\HelpersFor_IP.ps1" />
     <Compile Include="Scripts\Check-F5ApmCcuUsage.ps1" />
-    <Compile Include="Scripts\Find-AvailableIpAddresses.ps1" />
+    <Compile Include="Scripts\Find-F5AvailableIpAddresses.ps1" />
     <Compile Include="Scripts\New-F5ConnectionInfo.ps1" />
     <Compile Include="Scripts\Resolve-F5VirtualInformation.ps1" />
   </ItemGroup>
