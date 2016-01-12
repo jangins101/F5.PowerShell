@@ -5,8 +5,8 @@ function New-F5ConnectionInfo {
         [string] $Hostname,
 
         [Parameter(Position = 1, Mandatory = $true, HelpMessage = "You must specify admin credentials that can access iControlRest")]
-        [PSCredential] $Credentials,
-
+        [PSCredential] $Credentials = $(Get-Credential),
+		
         [Parameter()]
         [switch] $Verify    = $true
     )
