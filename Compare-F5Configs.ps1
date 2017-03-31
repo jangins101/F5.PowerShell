@@ -102,8 +102,8 @@ Process {
 
     function Check-DifferenceBetweenLines($linesA, $linesB, $conversion) {
         # Grab the right conversion function
-        if ("$conversion" -eq "") { $fcn = (Get-Item function:fcnEmpty) } else { $fcn = (Get-Item function:$conversion) }
-
+        if ($CompareExact -or [string]::IsNullOrEmpty($conversion)) { $fcn = (Get-Item function:fcnEmpty) } else { $fcn = (Get-Item function:$conversion) }
+        
         # For each line in linesA, check for an exact (case sensitive) name match,
         #   and grab the lines if their definitions aren't a match
         $diffLines  = @($linesA | ?{$a = $_; `
